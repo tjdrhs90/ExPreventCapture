@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bYV-t5-Fhe">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="suv-tj-jFZ">
+            <objects>
+                <viewController id="bYV-t5-Fhe" customClass="ViewController" customModule="ExPreventCapture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SSY-au-zMw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ve-oY-69V">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNl-so-d62">
+                                        <rect key="frame" x="50" y="50" width="293" height="659"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-Ch-C4N">
+                                                <rect key="frame" x="50" y="50" width="193" height="559"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="281-fX-ihV">
+                                                <rect key="frame" x="121.66666666666666" y="304.66666666666669" width="50" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="281-fX-ihV" secondAttribute="height" multiplier="1:1" id="4IL-6g-duB"/>
+                                                    <constraint firstAttribute="width" constant="50" id="DID-Ei-fKe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstItem="281-fX-ihV" firstAttribute="centerX" secondItem="zNl-so-d62" secondAttribute="centerX" id="Agh-ro-atE"/>
+                                            <constraint firstItem="bFr-Ch-C4N" firstAttribute="top" secondItem="zNl-so-d62" secondAttribute="top" constant="50" id="Eg0-jI-gVa"/>
+                                            <constraint firstItem="bFr-Ch-C4N" firstAttribute="leading" secondItem="zNl-so-d62" secondAttribute="leading" constant="50" id="IJs-bD-xbq"/>
+                                            <constraint firstAttribute="trailing" secondItem="bFr-Ch-C4N" secondAttribute="trailing" constant="50" id="aXP-on-rFu"/>
+                                            <constraint firstItem="281-fX-ihV" firstAttribute="centerY" secondItem="zNl-so-d62" secondAttribute="centerY" id="b8A-hK-GyN"/>
+                                            <constraint firstAttribute="bottom" secondItem="bFr-Ch-C4N" secondAttribute="bottom" constant="50" id="mbf-el-e9N"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="zNl-so-d62" firstAttribute="leading" secondItem="9Ve-oY-69V" secondAttribute="leading" constant="50" id="5Jn-9d-5JO"/>
+                                    <constraint firstAttribute="bottom" secondItem="zNl-so-d62" secondAttribute="bottom" constant="50" id="SzM-ly-RCc"/>
+                                    <constraint firstItem="zNl-so-d62" firstAttribute="top" secondItem="9Ve-oY-69V" secondAttribute="top" constant="50" id="VH2-aS-s4d"/>
+                                    <constraint firstAttribute="trailing" secondItem="zNl-so-d62" secondAttribute="trailing" constant="50" id="cYa-us-OU1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ue1-d4-CcC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ue1-d4-CcC" firstAttribute="bottom" secondItem="9Ve-oY-69V" secondAttribute="bottom" id="LrL-gS-0yJ"/>
+                            <constraint firstItem="Ue1-d4-CcC" firstAttribute="trailing" secondItem="9Ve-oY-69V" secondAttribute="trailing" id="Ozd-gl-hzn"/>
+                            <constraint firstItem="9Ve-oY-69V" firstAttribute="leading" secondItem="Ue1-d4-CcC" secondAttribute="leading" id="P62-M9-bEf"/>
+                            <constraint firstItem="9Ve-oY-69V" firstAttribute="top" secondItem="Ue1-d4-CcC" secondAttribute="top" id="akX-X8-gLX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="bFr-Ch-C4N" id="MWt-nu-30a"/>
+                        <outlet property="greenView" destination="zNl-so-d62" id="ypZ-qs-tWS"/>
+                        <outlet property="yellowView" destination="281-fX-ihV" id="Mf6-B3-QAd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rN7-7n-tj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="759.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
